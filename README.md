@@ -1,0 +1,1 @@
+This is simple calculator by using vanilla js
