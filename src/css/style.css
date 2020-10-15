@@ -1,7 +1,50 @@
 body {
-    font-family: sans-serif;
-  }
+  font-family: sans-serif;
+  background-color:black;
+  display: flex;
+  justify-content: center;
+  font-size: 32px;  
+}
+#reset{
+  background-color: gray;
+}
 
+#result{
+  background-color: black;
+  width: 75%;
+}
+
+.calc-box{
+  width: 1000px;
+}
 .calc-box__row{
-    display: flex;
+  display: flex;
+  flex: content;
+  justify-content: center;
+  align-items: center;
+
+}
+.calc-box__row  *{
+  border-radius: 5px;
+  margin:3px;
+  background-color:#36353a;
+  color:white;
+  height:50px;
+}
+.calc-box__row:last-child button:first-child{
+  width:50.5%;
+}
+.calc-box__row button:last-child{
+  background-color: orange;
+}
+
+button{
+  width: 25%;
+  border:0;
+  outline:0;
+}
+button:focus {
+  outline:none;
+  box-shadow: none;
+  text-decoration: none;
 }
