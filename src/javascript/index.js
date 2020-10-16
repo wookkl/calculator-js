@@ -16,15 +16,16 @@ function Calculation(a, r, b) {
     } else if (r == "*") {
         return a * b;
     } else if (r == "/") {
-        if (b !== 0)
-            return a / b;
+        if (b !== 0) return a / b;
+        else return "Can not divide by 0!";
     }
 }
 //=를 누르면 결과 값과 현재 값을 계산한다. 그리고 다 초기화
 function handleEqual(e) {
-    result.innerText = Calculation(current_result, current_rule, current_value);
-    current_result = 0;
+    if (current_rule !== "=")
+        result.innerText = Calculation(current_result, current_rule, current_value);
 
+    current_result = 0;
     current_value = 0;
     current_input = "";
     current_rule = e.target.value;
